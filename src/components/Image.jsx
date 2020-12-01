@@ -9,11 +9,14 @@ export default function Image(props) {
     console.log(counter)
   }
 
+  console.log(props)
+
   return (
     <>
       <Link url={props.image} text={props.title} />
       <img onClick={onClickHandler} src={props.image} alt="logo" />
-      <p>{counter}</p>
+      {props.description ? <strong>{props.description}</strong> : "No description" }
+      {counter}
     </>
   )
 }

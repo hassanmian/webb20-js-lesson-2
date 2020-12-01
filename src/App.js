@@ -10,9 +10,10 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Image image={logo} title="React Logo"/>
-        <Image image="http://placekitten.com/200/300" title="Cat"/>
-        <Image image="http://placekitten.com/300/400" title="Cat 2"/>
+        <Image description="This is the React logotype" image={logo} title="React Logo"/>
+        <Image description="This is a cat" image="http://placekitten.com/200/300" title="Cat"/>
+        <Image description="This is another cat" image="http://placekitten.com/300/400" title="Cat 2"/>
+        <Image image="http://placekitten.com/400/400"/>
         
         <Paragraph title="Information">
           Edit <code>src/App.js</code> and save to reload.
